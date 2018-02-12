@@ -1,0 +1,15 @@
+.plusMinusWidget {
+  display: inline-block;
+}
+
+.plusMinusWidget > div {
+  display: inline;
+}
+.plusMinusWidget input {
+  float: left;
+  margin: 0;
+  border: 0;
+}
+.plusMinusWidget > div.icon {
+  padding: 0 5px;
+}

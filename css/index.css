@@ -1,0 +1,24 @@
+.settimer {
+    grid-column: col1-start;
+    grid-row: row2-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+.box.settimer {
+  padding: 0;
+}
+.instructions {
+    grid-column: 2;
+    grid-row: row2-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    font-size: 10px;
+}

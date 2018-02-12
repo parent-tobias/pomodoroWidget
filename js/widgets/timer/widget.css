@@ -1,0 +1,80 @@
+body {
+  margin: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  color: tomato;
+}
+
+main {
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 130px  [col2-start] 130px  [col3-start] 140px [col3-end];
+    grid-template-rows: [row1-start] 120px [row2-start] 120px [row2-end];
+    background-color: #fff;
+    color: tomato;
+    justify-content: center;
+    }
+
+.box {
+    color: tomato;
+    padding: 30px;
+    font-size: 150%;
+    border: 1px solid tomato;
+}
+
+.food {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+}
+
+.clock {
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock:hover {
+    color: #ffd700;
+    font-size: 25px;
+    cursor: pointer; 
+}
+
+#mins {
+    align-items: center;
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 15px;
+}
+
+.icon:hover {
+    color: #ffd700;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pause {
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.pause:hover {
+    color: #ffd700;
+    cursor: pointer; 
+}

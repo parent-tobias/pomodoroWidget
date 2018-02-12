@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+    <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script  src="//code.jquery.com/jquery-3.3.1.min.js"
+             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+             crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./js/widgets/timer/widget.js"></script>
+    <link rel="stylesheet" href="./js/widgets/timer/widget.css" />
+    <script type="text/javascript" src="./js/widgets/plus-minus/widget.js"></script>
+    <link rel="stylesheet" href="./js/widgets/plus-minus/widget.css" />
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    
+    <title>Pomodoro Timer App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="my-pomodoro-timer">
+      
+    </div>
+    <div class="my-plusminus-test">
+      
+    </div>
+    <script type="text/javascript">
+     var myPomodoroTimer = new PomodoroTimerWidget({id: 'first-timer'});
+      $(".my-pomodoro-timer").append(myPomodoroTimer.getHtml() );
+    </script>
+  </body>
+</html>
